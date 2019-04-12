@@ -12,4 +12,6 @@ public interface Queue<E> {
 
     //Get the number of elements in the queue
     int size();
+
+    void clear();
 }

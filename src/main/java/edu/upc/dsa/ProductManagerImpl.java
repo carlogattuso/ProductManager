@@ -145,4 +145,10 @@ public class ProductManagerImpl implements ProductManager{
     public int orderSize(){
         return this.orderQueue.size();
     }
+
+    public void clear(){
+        this.userHashMap.clear();
+        this.products.clear();
+        this.orderQueue.clear();
+    }
 }

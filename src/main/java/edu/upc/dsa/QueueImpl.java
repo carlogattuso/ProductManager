@@ -58,4 +58,11 @@ public class QueueImpl<E> implements Queue<E> {
             this.data[i] = this.data[i + 1];
         }
     }
+
+    public void clear(){
+        for (int i = 0; i < this.p; i++) {
+            this.data[i] = null;
+        }
+        this.p=0;
+    }
 }
